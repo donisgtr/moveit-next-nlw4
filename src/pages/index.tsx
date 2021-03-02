@@ -6,11 +6,16 @@ import { Countdown } from '../components/Countdown';
 import styles from "../styles/pages/Home.module.css";
 import React from "react";
 
+import Head from 'next/head';
+
 export default function Home() {
   return (
      /* isso aqui e um compomente, um compomente é uma função e só isso. que  retorna um html 
   e um compomente que cria conteudo em html, isolar forma de codigo e reaproveitar codigos */
     <div className={styles.container}>
+      <head>
+        <title> Inicio | move.it </title>
+      </head>
       <ExperienceBar />
       <section>
         <div>
